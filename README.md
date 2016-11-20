@@ -24,7 +24,7 @@ docker run \
    --privileged=true \
    --name=kubelet \
    -d \
-   compass/hyperkube:${K8S_VERSION} \              # image with ceph-common vendored-in
+   kobel169/hyperkube:v1.5.0-beta.1_coreos.0 \              # image with ceph-common vendored-in
    /hyperkube kubelet \
    --containerized \
    --hostname-override="127.0.0.1" \
